@@ -42,3 +42,36 @@ gsap.from("h1", {
 
 
 // **********************************GSAP TIMELINES ************************//
+
+const tl = gsap.timeline();
+
+tl.to("#box3", {
+    x: 700,
+    duration: 1.5,
+    delay: 1,
+    opacity: 0,
+    rotate: 360,
+    repeat: 3,
+    yoyo: true,
+    borderRadius: "50%",
+})
+
+tl.to("#box4", {
+    x: 700,
+    duration: 1.5,
+    opacity: 0,
+    rotate: 360,
+    repeat: 3,
+    yoyo: true,
+    borderRadius: "50%",
+})
+
+tl.to("#box5", {
+    x: 700,
+    duration: 1.5,
+    opacity: 0,
+    rotate: 360,
+    repeat: 1,
+    yoyo: true,
+    borderRadius: "50%",
+})

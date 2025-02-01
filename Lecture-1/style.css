@@ -9,7 +9,6 @@
 html, body {
     height: 100%;
     width: 100%;
-    h
 }
 
 body{
@@ -27,4 +26,26 @@ body{
     height: 200px;
     width: 200px;
     background-color: aquamarine;
+}
+
+
+#box3 {
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    margin: 50px;
+}
+
+#box4 {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    margin: 50px;
+}
+
+#box5 {
+    height: 200px;
+    width: 200px;
+    background-color: orangered;
+    margin: 50px;
 }
