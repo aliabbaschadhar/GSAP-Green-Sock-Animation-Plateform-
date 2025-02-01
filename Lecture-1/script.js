@@ -1,3 +1,12 @@
+// **********************Text animations********************************//
+
+gsap.to("h1", {
+    color: "red",
+    duration: 2,
+    delay: 1,
+})
+
+// ****************************Box Animations**************************//
 // Initial to final
 gsap.to("#box1", {
     x: 500,

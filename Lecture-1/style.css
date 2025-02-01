@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing:border-box;
     font-family: 'Gilroy', sans-serif;
+    color: gainsboro;
 }
 
 html, body {
@@ -10,7 +11,11 @@ html, body {
     width: 100%;
 }
 
-#box1 {
+body{
+    background: #000;
+}
+
+/* #box1 {
     height: 200px;
     width: 200px;
     background-color: red;
@@ -21,4 +26,4 @@ html, body {
     height: 200px;
     width: 200px;
     background-color: aquamarine;
-}
+} */
