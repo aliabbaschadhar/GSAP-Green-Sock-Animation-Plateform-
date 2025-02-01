@@ -6,7 +6,7 @@ gsap.to("#box1", {
     rotate: 360,
     backgroundColor: "orange",
     borderRadius: "50%",
-    // opacity: 0,
+    // opacity: 0, // Opacity from one to zero
     scale: 2,
 })
 
@@ -19,6 +19,6 @@ gsap.from("#box2", {
     rotate: 360,
     backgroundColor: "orange",
     borderRadius: "50%",
-    // opacity: 0,
+    opacity: 1,
     scale: 2,
 })
