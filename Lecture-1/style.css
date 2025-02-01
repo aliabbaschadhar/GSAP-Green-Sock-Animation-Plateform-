@@ -15,7 +15,7 @@ body{
     background: #000;
 }
 
-/* #box1 {
+#box1 {
     height: 200px;
     width: 200px;
     background-color: red;
@@ -26,4 +26,4 @@ body{
     height: 200px;
     width: 200px;
     background-color: aquamarine;
-} */
+}
