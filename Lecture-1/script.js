@@ -1,3 +1,4 @@
+
 // ****************************Box Animations**************************//
 // Initial to final
 gsap.to("#box1", {
@@ -74,4 +75,30 @@ tl.to("#box5", {
     repeat: 1,
     yoyo: true,
     borderRadius: "50%",
+})
+
+//*************************************************Timeline Advance *********************** */
+
+const timeline = gsap.timeline();
+
+timeline.from("h2", {
+    y: -20,
+    duration: 0.7,
+    delay: 0.5,
+    opacity: 0 // As we know that gsap.from is from final to initial so opacity will go from zero to one
+})
+
+timeline.from("h4", {
+    y: -20,
+    duration: 0.5,
+    opacity: 0,
+    stagger: 0.3
+})
+
+timeline.from(".time", {
+    // y: -50,
+    y: 20,
+    duration: 0.5,
+    opacity: 0,
+    scale: 0.2
 })

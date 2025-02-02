@@ -15,6 +15,31 @@ body{
     background: #000;
 }
 
+#nav{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+#part2{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+h1.time{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 80px;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+}
+
 #box1 {
     height: 200px;
     width: 200px;
