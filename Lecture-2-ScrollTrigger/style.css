@@ -11,7 +11,11 @@ body {
     width: 100%;
 }
 
-#page1 {
+body {
+    overflow-x: hidden;
+}
+
+/* #page1 {
     height: 100%;
     width: 100%;
     background-color: rgb(30, 189, 189);
@@ -61,4 +65,34 @@ h2 {
     background-color: rgb(184, 30, 189);
     border-radius: 10px;
 
+} */
+
+#pin1 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#pin2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(122, 184, 205);
+    padding: 5vw 0;
+}
+
+#pin3 {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#pin2 h1 {
+    width: 100%;
+    height: max-content;
+    font-size: 50vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    white-space: nowrap;
+    /* Prevents the text from going to the next line ==> To make the content to only come at one line*/
+    /* transform: translateX(-200%); */
 }
