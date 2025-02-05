@@ -27,7 +27,7 @@ gsap.from("#page3 #box", {
     rotate: 360,
 })
 
-Some advance way
+// Some advance way
 
 gsap.from("#page2 h1", {
     opacity: 0,
