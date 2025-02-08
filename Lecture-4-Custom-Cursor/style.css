@@ -15,6 +15,9 @@ body {
     height: 100%;
     width: 100%;
     background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #cursor {
@@ -22,7 +25,50 @@ body {
     width: 20px;
     background-color: white;
     border-radius: 50%;
-    /* position:absolute; */
     position: fixed;
-    cursor: pointer;
+    /* This will stick the cursor to the viewport (the browser window) */
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9;
+    /* This will make sure the cursor appears on top of other elements */
 }
+
+#image {
+    height: 50%;
+    width: 60%;
+    background-color: burlywood;
+    position: relative;
+    /* This will set the position of the image relative to its parent element */
+}
+
+#image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    /* This will position the overlay relative to its nearest parent element with a position other than static */
+    z-index: 10;
+    /* This will make sure the overlay appears on top of the image */
+}
+
+/* 
+    Position properties:
+
+    1. position: static; - This is the default value. It means the element is positioned according to the normal flow of the document.
+    2. position: relative; - This positions the element relative to its parent element. It will not affect the position of other elements.
+    3. position: absolute; - This positions the element relative to its nearest parent element with a position other than static. It will remove the element from the normal flow of the document and other elements will not be affected by it.
+    4. position: fixed; - This positions the element relative to the viewport (the browser window). It will remove the element from the normal flow of the document and other elements will not be affected by it.
+    5. position: sticky; - This positions the element relative to its parent element, but it will also stick to the viewport when the element is scrolled out of view.
+    6. position: inherit; - This will inherit the position value from its parent element.
+
+    Note: When using position: absolute, the element will be positioned relative to its nearest parent element with a position other than static. If no such parent element exists, the element will be positioned relative to the body.
+*/
