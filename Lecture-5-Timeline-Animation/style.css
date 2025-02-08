@@ -2,11 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy', sans-serif;
+    font-family: aeonik, sans-serif;
 }
 
 html,
 body {
     height: 100%;
     width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-image: url(https:/images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background-color: #226fafa7;
+}
+
+#nav h2 {
+    font-size: 30px;
+}
+
+#nav i {
+    font: size 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#full {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.262);
+    right: -35%;
+    top: 0;
+    /* filter: blur(20px); */
+    backdrop-filter: blur(20px);
+    padding: 150px 60px;
+}
+
+#full h4 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#full i {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 25px;
 }
