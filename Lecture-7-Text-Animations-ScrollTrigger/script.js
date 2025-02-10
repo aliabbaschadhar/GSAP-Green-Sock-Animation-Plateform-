@@ -22,3 +22,4 @@ window.addEventListener("wheel", (event) => {
         })
     }
 })
+// Maza agya
