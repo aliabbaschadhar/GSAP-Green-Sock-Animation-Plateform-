@@ -1,11 +1,11 @@
-let initalPath = `M 10 100 Q 500 100 990 100`
+let initalPath = `M 10 100 Q 500 100 1400 100`
 
-let finalPath = `M 10 100 Q 500 100 990 100`
+let finalPath = `M 10 100 Q 500 100 1400 100`
 
 const string = document.querySelector("#string");
 
-string.addEventListener("mousemove", (dets) => {
-    initalPath = `M 10 100 Q ${dets.x} ${dets.y} 990 100`
+string.addEventListener("mousemove", (event) => {
+    initalPath = `M 10 100 Q ${event.x} ${event.y} 1400 100`
 
     // To change the attribute we can do this in gsap
 
