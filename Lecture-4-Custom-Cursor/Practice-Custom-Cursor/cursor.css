@@ -11,13 +11,46 @@ body {
     width: 100%;
 }
 
-body {
-    background-color: black
-}
-
 #cursor {
     height: 20px;
     width: 20px;
     background-color: aquamarine;
     border-radius: 50%;
+    position: fixed;
+    /* Gave position fixed because we want that our cursor remain at our position when scroll the pages */
+    font-size: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    z-index: 9;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#image {
+    width: 70%;
+    height: 50%;
+    background-color: antiquewhite;
+}
+
+#image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    width: 70%;
+    height: 50%;
+    background: transparent;
+    position: absolute;
+    z-index: 10;
 }
