@@ -10,3 +10,48 @@ body {
     height: 100%;
     width: 100%;
 }
+
+.section-1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav h1 {
+    font-size: 25px;
+}
+
+nav h4 {
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+nav h1 i {
+    rotate: 45deg;
+    display: inline-block;
+    margin: 0px 3px;
+    font-size: 30px;
+}
+
+nav button {
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid #000;
+    background-color: transparent;
+}
