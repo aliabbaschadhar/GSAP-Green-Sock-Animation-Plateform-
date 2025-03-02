@@ -2,7 +2,7 @@ let menu = document.querySelector("#nav i");
 let cross = document.querySelector("#full i ");
 console.log(cross)
 
-// let tl = gsap.timeline({ paused: true });
+// let tl = gsap.timeline({ paused: true }); //timeline will not start automatically until i do tl.play().
 
 let tl = gsap.timeline();
 
