@@ -152,3 +152,25 @@ nav button:hover {
     height: 100%;
     width: 100%;
 }
+
+.section-2 .services {
+    margin-top: 30px;
+    padding: 0px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.section-2 .services h1 {
+    background-color: #9ae975;
+    padding: 10px 12px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: china;
+}
+
+.services p {
+    width: 50%;
+    font-size: 20px;
+}
