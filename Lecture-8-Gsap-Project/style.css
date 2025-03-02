@@ -174,3 +174,86 @@ nav button:hover {
     width: 50%;
     font-size: 20px;
 }
+
+.container {
+    margin-top: 100px;
+    padding: 0px 55px;
+    width: 100%;
+    height: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.elem {
+    width: 48%;
+    height: 400px;
+    /* background-color: #9ae975; */
+    flex-shrink: 0;
+    border-radius: 30px;
+    box-shadow: 0px 7px black;
+    border: 2px solid black;
+    padding: 50px;
+    display: flex;
+}
+
+.elem-part1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.elem-part2 img {
+    height: 100%;
+}
+
+.elem-part1 h2 {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: china;
+    background-color: #9ae975;
+    padding: 7px 10px;
+    border-radius: 4px;
+    /* width: fit-content; */
+}
+
+.elem-part1 h4 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 450px;
+}
+
+.elem-part1 h4 i {
+    padding: 8px;
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.black {
+    background-color: #000;
+}
+
+/* This selector targets the h2 element inside elem-part1 class which is inside an element with the class black */
+.black .elem-part1 h2 {
+    background-color: #fff;
+    color: #000;
+}
+
+.black .elem-part1 h4 {
+    color: #fff;
+}
+
+.black .elem-part1 h4 i {
+    background-color: #fff;
+    color: #000;
+}
