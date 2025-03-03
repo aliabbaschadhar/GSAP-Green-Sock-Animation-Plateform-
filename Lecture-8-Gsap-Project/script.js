@@ -55,7 +55,7 @@ function page2Animation() {
             // scrub: 2 means that when user scrolls the animation will be
             // updated every 2 pixels of scroll. This means that if the user
             // scrolls 2 pixels then the animation will move forward by 2px
-            // scrub: 2,
+            scrub: 2,
         }
     });
 
