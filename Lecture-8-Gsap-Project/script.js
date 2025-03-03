@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 function page1Animation() {
     const tl = gsap.timeline();
 
@@ -41,3 +43,21 @@ function page1Animation() {
 }
 
 page1Animation();
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".section2",
+        scroller: "body",
+        markers: true,
+        start: "top 50%",
+        end: "top 0",
+        scrub: 2,
+    }
+});
+tl2.from(".services", {
+    x: -300,
+    opacity: 0,
+    duration: 1
+});
