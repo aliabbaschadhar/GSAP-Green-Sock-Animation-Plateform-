@@ -31,7 +31,7 @@ function page1Animation() {
 
     tl.from(".center-part2 img", {
         opacity: 0,
-        // delay: -1, // this makes the image blink twice to prevent that we will use the delay in timeline
+        // delay: -1, // to prevent image blink twice we will use the delay in timeline
     }, "-=0.3")
 
     tl.from(".section-1-bottom img", {
