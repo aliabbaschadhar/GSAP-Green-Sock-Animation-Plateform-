@@ -19,7 +19,7 @@ function App() {
       ease: "power3.out",
     })
 
-  Another and preferred way of doing that is by using useRef hook
+    // Another and preferred way of doing that is by using useRef hook
 
     gsap.to(gsapRef.current, {
       x: 800,
