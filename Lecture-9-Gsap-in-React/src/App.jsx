@@ -3,38 +3,38 @@ import gsap from "gsap"
 import { useRef } from "react"
 
 function App() {
-  // const gsapRef = useRef(null);
+  const gsapRef = useRef(null);
 
-  // useGSAP(() => {
-  // gsap.to(".bg-orange-500", {
-  //   x: 800,
-  //   y: 300,
-  //   delay: 1,
-  //   duration: 1.5,
-  //   opacity: 1,
-  //   borderRadius: "50%",
-  //   scale: 2,
-  //   yoyo: true,
-  //   repeat: 5,
-  //   ease: "power3.out",
-  // })
+  useGSAP(() => {
+    gsap.to(".bg-orange-500", {
+      x: 800,
+      y: 300,
+      delay: 1,
+      duration: 1.5,
+      opacity: 1,
+      borderRadius: "50%",
+      scale: 2,
+      yoyo: true,
+      repeat: 5,
+      ease: "power3.out",
+    })
 
-  // Another and preferred way of doing that is by using useRef hook
+  Another and preferred way of doing that is by using useRef hook
 
-  // gsap.to(gsapRef.current, {
-  //   x: 800,
-  //   y: 300,
-  //   delay: 1,
-  //   duration: 1.5,
-  //   opacity: 1,
-  //   borderRadius: "50%",
-  //   scale: 2,
-  //   yoyo: true,
-  //   repeat: 5,
-  //   ease: "power3.out",
+    gsap.to(gsapRef.current, {
+      x: 800,
+      y: 300,
+      delay: 1,
+      duration: 1.5,
+      opacity: 1,
+      borderRadius: "50%",
+      scale: 2,
+      yoyo: true,
+      repeat: 5,
+      ease: "power3.out",
 
-  //   })
-  // }, [])
+    })
+  }, [])
 
   useGSAP(() => {
     gsap.from(".box", {
